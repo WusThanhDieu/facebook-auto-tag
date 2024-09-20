@@ -14,7 +14,7 @@
 + Error code 0x0000002 - lỗi này tool không thể thực hiện quá trình auto tag, vui lòng tải lại trang và thử lại.
 
 
-Lưu ý: Cần treo tab facebook và tool khi đang trong quá trình tag.
+Lưu ý: Cần treo tab facebook và tool khi đang trong quá trình tag, và facebook phải là ngôn ngữ tiếng việt.
 
 Tiện ích này chỉ dành cho mục đính học tập, không sử dụng nó làm phiền người khác.
 
