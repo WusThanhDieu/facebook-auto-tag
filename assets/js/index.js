@@ -120,9 +120,9 @@ const Loop = async (e, t, n, o) => {
                         });
                         return a.dispatchEvent(t), !0
                     }
-                    return alert("Sai uid, fullname hoặc vui lòng làm trống input tin nhắn!"), !1
+                    return alert("Error code: 0x0000001"), !1
                 }
-                return alert("Không thể chạy tool auto tag!"), !1
+                return alert("Error code: 0x0000002"), !1
             })(e, t, n),
             args: [e, t, n[s]]
         }).catch(e => (console.error("Error: ", e), [!1])), s++;
