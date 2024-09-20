@@ -13,7 +13,7 @@
 + Error code 0x0000001 - tức là nhập sai uid hoặc facebook (nếu nhập đúng vẫn báo lỗi thì kiểm tra xem phần nhập tin nhắn của messenger có nội dung hay không, nếu có hãy xoá nó đi).
 + Error code 0x0000002 - lỗi này tool không thể thực hiện quá trình auto tag, vui lòng tải lại trang và thử lại.
   
-###### Lưu ý: Cần treo tab facebook và tool khi đang trong quá trình tag.
+Lưu ý: Cần treo tab facebook và tool khi đang trong quá trình tag.
 Tiện ích này chỉ dành cho mục đính học tập, không sử dụng nó làm phiền người khác.
 
 
