@@ -1,0 +1,31 @@
+{
+	"name": "Auto Tag Facebook",
+	"description": "Basic auto tag facebook",
+	"version": "0.0.1",
+	"manifest_version": 3,
+	"permissions": [
+		"tabs",
+		"contextMenus",
+		"notifications",
+		"storage",
+		"scripting",
+		"activeTab",
+		"cookies"
+	],	
+	"background": {
+		"service_worker": "background.js"
+	  },
+	"action": {
+	  "default_popup": "popup.html",
+	  "default_icon": {
+		"128": "/assets/icons/logo.png"
+	  }
+	},
+	"host_permissions": [
+		"https://www.facebook.com/*",
+		"https://facebook.com/*"
+	],
+	"icons": {
+		"128": "/assets/icons/logo.png"
+	}
+}					

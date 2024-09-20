@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+  </head>
+  <body>
+    <div id="wt-wrapper">
+      <div id="wt-header">
+        <h1>Basic Auto Tag Facebook - V0.0.1</h1>
+      </div>
+      <div id="notify" class="alert"></div>
+      <div id="wt-containers">
+        <div class="wt-form">
+          <label for="text">Thông Tin</label>
+          <input
+            type="text"
+            id="wt-info"
+            placeholder="1000xxxxxxxx|Nguyễn Văn A"
+          />
+        </div>
+        <div class="wt-form mt-4">
+          <label for="text">Nội Dung</label>
+          <textarea
+            id="wt-content"
+            placeholder="Nhập nội dung cần mentions, phân tách bằng dấu phẩy..."
+          ></textarea>
+        </div>
+        <div class="wt-form mt-4">
+          <label class="switch">
+            <input type="checkbox" id="fast"/>
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="wt-buttons">
+          <!-- <p>Hoàn thành: <span id="wt-count">0</span></p> -->
+          <button class="button" id="wt-reset">Dừng</button>
+          <button class="button primary" id="wt-button">Bắt Đầu</button>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
