@@ -7,6 +7,13 @@
 + Định dạng: văn bản + phân tách (,)
 + Chú thích: bỏ trống hoặc điền nội dung tuỳ chọn khi tag sẽ kèm theo, nếu nhiều nội dung sẽ sài phân tách bằng dấu phẩy.
 + Ví dụ: a,b,c,d tool sẽ tự động tag theo thứ tự từ chuỗi a -> d và sẽ được lặp lại liên tục.
+### MÃ LỖI:
++ Error code 0x0000001 - tức là nhập sai uid hoặc facebook (nếu nhập đúng vẫn báo lỗi thì kiểm tra xem phần nhập tin nhắn của messenger có nội dung hay không, nếu có hãy xoá nó đi).
++ Error code 0x0000002 - lỗi này tool không thể thực hiện quá trình auto tag, vui lòng tải lại trang và thử lại.
+  
+### Lưu ý: Cần treo tab facebook và tool khi đang trong quá trình tag.
+
+
 
 <img
   src="https://i.ibb.co/JpCpNnM/nh-ch-p-m-n-h-nh-2024-09-20-175338.png"
