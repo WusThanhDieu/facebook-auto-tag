@@ -69,7 +69,7 @@ ws_start.addEventListener("click", () => {
                 s = ws_content.value.trim();
             if ("" === t) return void alert("Thông tin không được để trống!");
             if (!/^\d+\|.+$/.test(t)) return void alert("Thông tin phải là định dạng: uid|fullname");
-            if (s.length > 300) return void alert("Nội dung quá dài! Nội dung không được vượt quá 300 ký tự.");
+            if (s.length > 300) return void alert("Nội dung không được vượt quá 300 ký tự.");
             const [a, c] = t.split("|"), r = s.split(",").map(e => e.trim()).filter(e => e);
             Tag = !0, o = t, chrome.storage.local.get(["ws-info"], e => {
                 e["ws-info"] && e["ws-info"] === o ? (chrome.storage.local.remove("ws-info"), chrome.storage.local.set({
@@ -108,10 +108,10 @@ const Loop = async (e, t, n, o) => {
                         });
                         a.dispatchEvent(t), (a.firstChild || a.appendChild(document.createElement("p"))).textContent += e
                     }
-                    a.focus(), a.innerHTML = "", c("@" + o), await new Promise(e => setTimeout(e, 200));
+                    a.focus(), a.innerHTML = "", c("@" + o), await new Promise(e => setTimeout(e, 150));
                     let e = document.querySelector(`li[id="${s} name"] > div[role="presentation"]`);
                     if (e) {
-                        e.click(), await new Promise(e => setTimeout(e, 200)), n && n.trim() && (c(" " + n), await new Promise(e => setTimeout(e, 50)));
+                        e.click(), await new Promise(e => setTimeout(e, 150)), n && n.trim() && (c(" " + n), await new Promise(e => setTimeout(e, 150)));
                         let t = new KeyboardEvent("keydown", {
                             bubbles: !0,
                             cancelable: !0,
@@ -126,7 +126,7 @@ const Loop = async (e, t, n, o) => {
             })(e, t, n),
             args: [e, t, n[s]]
         }).catch(e => (console.error("Error: ", e), [!1])), s++;
-        const a = fast_mod ? 0 : 1000;
+        const a = fast_mod ? 40 : 1000;
         await new Promise(e => setTimeout(e, a))
     }
 };
