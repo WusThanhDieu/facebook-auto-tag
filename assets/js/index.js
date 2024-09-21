@@ -111,7 +111,7 @@ const Loop = async (e, t, n, o) => {
                     a.focus(), a.innerHTML = "", c("@" + o), await new Promise(e => setTimeout(e, 200));
                     let e = document.querySelector(`li[id="${s} name"] > div[role="presentation"]`);
                     if (e) {
-                        e.click(), await new Promise(e => setTimeout(e, 200)), n && n.trim() && (c(" " + n), await new Promise(e => setTimeout(e, 150)));
+                        e.click(), await new Promise(e => setTimeout(e, 200)), n && n.trim() && (c(" " + n), await new Promise(e => setTimeout(e, 50)));
                         let t = new KeyboardEvent("keydown", {
                             bubbles: !0,
                             cancelable: !0,
