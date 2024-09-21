@@ -108,10 +108,10 @@ const Loop = async (e, t, n, o) => {
                         });
                         a.dispatchEvent(t), (a.firstChild || a.appendChild(document.createElement("p"))).textContent += e
                     }
-                    a.focus(), a.innerHTML = "", c("@" + o), await new Promise(e => setTimeout(e, 150));
+                    a.focus(), a.innerHTML = "", c("@" + o), await new Promise(e => setTimeout(e, 200));
                     let e = document.querySelector(`li[id="${s} name"] > div[role="presentation"]`);
                     if (e) {
-                        e.click(), await new Promise(e => setTimeout(e, 150)), n && n.trim() && (c(" " + n), await new Promise(e => setTimeout(e, 100)));
+                        e.click(), await new Promise(e => setTimeout(e, 200)), n && n.trim() && (c(" " + n), await new Promise(e => setTimeout(e, 150)));
                         let t = new KeyboardEvent("keydown", {
                             bubbles: !0,
                             cancelable: !0,
@@ -126,7 +126,7 @@ const Loop = async (e, t, n, o) => {
             })(e, t, n),
             args: [e, t, n[s]]
         }).catch(e => (console.error("Error: ", e), [!1])), s++;
-        const a = fast_mod ? 100 : 1500;
+        const a = fast_mod ? 0 : 1000;
         await new Promise(e => setTimeout(e, a))
     }
 };
