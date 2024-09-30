@@ -69,7 +69,7 @@ ws_start.addEventListener("click", () => {
                 s = ws_content.value.trim();
             if ("" === t) return void alert("Thông tin không được để trống!");
             if (!/^\d+\|.+$/.test(t)) return void alert("Thông tin phải là định dạng: uid|fullname");
-            if (s.length > 300) return void alert("Nội dung không được vượt quá 300 ký tự.");
+            if (s.length > 999) return void alert("Nội dung không được vượt quá 300 ký tự.");
             const [a, c] = t.split("|"), r = s.split(",").map(e => e.trim()).filter(e => e);
             Tag = !0, o = t, chrome.storage.local.get(["ws-info"], e => {
                 e["ws-info"] && e["ws-info"] === o ? (chrome.storage.local.remove("ws-info"), chrome.storage.local.set({
@@ -97,7 +97,7 @@ const Loop = async (e, t, n, o) => {
             func: (e, t, n) => (async (e, t, n) => {
                 let o = t,
                     s = e,
-                    a = document.querySelector('div[contenteditable="true"][role="textbox"][aria-label="Tin nhắn"]');
+                    a = document.querySelector('div[contenteditable="true"][role="textbox"][data-lexical-editor="true"]');
                 if (a) {
                     function c(e) {
                         let t = new InputEvent("input", {
